@@ -6,6 +6,7 @@ import HomePage from '../../pages/Home';
 import LoginPage from '../../pages/Login';
 import NotFound from '../../pages/NotFound';
 import SecretPage from '../../pages/Secret';
+import VideoPage from '../../pages/Video';
 import Private from '../Private';
 import Fortune from '../Fortune';
 import Layout from '../Layout';
@@ -36,6 +37,9 @@ function App() {
         <Layout>
           <Switch>
             <Route exact path="/">
+              <VideoPage />
+            </Route>
+            <Route exact path="/home">
               <HomePage />
             </Route>
             <Route exact path="/login">
